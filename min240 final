@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+
+</head>
+
+
+
+<style>
+    #ballerina {
+
+
+        width: 118px;
+        height: 130px;
+        margin: auto;
+        background-image: url("7730727-african-american-ballerina-silhouette-on-a-white-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transform-origin: 60%, 0%;
+        animation: turn 5s,
+            turn2 10s ease-in 0.5s,
+            turn3 2s ease-out 4.5s,
+            fade_out_in 5s;
+    }
+
+    @keyframes turn {
+        from {
+            transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(5deg);
+        }
+    }
+
+
+
+    @keyframes fade_out_in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+
+<body>
+    <div id="ballerina"></div>
+</body>
+
+</html>
+
+
